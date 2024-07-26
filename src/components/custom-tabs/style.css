@@ -1,0 +1,35 @@
+.tab-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 12px;
+  }
+
+.tab-item {
+    display: inline-flex;
+    padding:10px 20px;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: darkgoldenrod;
+    color: antiquewhite;
+    cursor: pointer;
+    border: none;
+    text-align: center;
+}
+
+.tab-item.active {
+    border-color: aliceblue;
+    color: brown;
+}
+
+.content {
+    padding: 20px 10px;
+    height:300px;
+    overflow: auto;
+    background-color: #fff;
+}

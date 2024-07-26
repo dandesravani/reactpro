@@ -1,0 +1,29 @@
+.search-container {
+    text-align: center;
+}
+
+.search-input {
+    padding:10px 20px;
+    width:250px;
+    border: none;
+}
+
+.button {
+    background-color: teal;
+    padding: 10px 20px;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.container {
+    width:80%;
+    height:350px;
+    border:1px solid black;
+    margin:auto;
+    margin-top:50px;
+}
+
+.image {
+    border:50%;
+}
