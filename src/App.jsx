@@ -1,4 +1,4 @@
-import "./App.css"
+// import "./App.css"
 import Fruits from "./components/other/Fruits"
 import Hello from "./components/other/Fruits"
 import {ProductList} from "./components/other/GroceryStore"
@@ -39,6 +39,11 @@ import {ScrollTopToBottom} from "./components/scroll-top-to-bottom/ScrollTopToBo
 import {ScrollToSection} from "./components/scroll-top-to-bottom/ScrollToSection"
 import {Search} from "./components/weather-app/Search"
 import {WeatherApp} from "./components/weather-app/Weather"
+import {Routes, Route} from "react-router-dom"
+import {Home} from "./components/pages/home"
+import {Details} from "./components/pages/details"
+import {Favorites} from "./components/pages/favorites"
+import {Navbar} from "./components/navbar"
 
 // const fruits = [
 //   {name: "apple", price: 7, soldOut: true},
@@ -72,8 +77,15 @@ import {WeatherApp} from "./components/weather-app/Weather"
 
 function App() {
   return (
-    <div className="App">
-      <WeatherApp />
+    <div>
+      <div className="min-h-screen p-6 bg-white text-gray-600 text-lg">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/favorites" element={<Favorites />} />
+          <Route path="/recipe-item/:id" element={<Details />} />
+        </Routes>
+      </div>
     </div>
   )
 }

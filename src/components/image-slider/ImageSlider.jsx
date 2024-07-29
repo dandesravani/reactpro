@@ -41,7 +41,7 @@ export const ImageSlider = ({url, limit}) => {
     return <p className="error">{error}</p>
   }
   return (
-    <div className="container">
+    <div className="img-container">
       <BsArrowLeftCircleFill
         className="arrow arrow-left"
         onClick={handlePrevious}

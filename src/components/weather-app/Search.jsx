@@ -2,7 +2,7 @@ import React from "react"
 import "./style.css"
 
 export const Search = ({onSubmitSearch}) => {
-  const [search, set] = React.useState("")
+  const [search, set] = React.useState("Mumbai")
   return (
     <div className="search">
       <input

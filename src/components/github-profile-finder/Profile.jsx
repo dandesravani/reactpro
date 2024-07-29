@@ -51,7 +51,7 @@ export const Profile = () => {
   return (
     <>
       <SearchInput onSearch={set} />
-      <div className="container">
+      <div className="github-container">
         <img
           className="image"
           src={profile.avatar_url}

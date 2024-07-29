@@ -1,5 +1,4 @@
 import React from "react"
-import "./style.css"
 
 export const ThemeChange = () => {
   const [themeColor, set] = React.useState(false)
